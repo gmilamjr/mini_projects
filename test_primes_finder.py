@@ -17,6 +17,14 @@ def test_get_correct_primes():
     
     assert gt_pl == pl
     
+def test_inclusive_range():
+    n = 29
+    gt_pl = set([2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
+    
+    pl = set(primes_finder(n))
+    
+    assert gt_pl == pl
+    
 def test_get_correct_primes_sortedset():
     n = 100
     gt_pl = set([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97])
